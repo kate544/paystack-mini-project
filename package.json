@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "react-paystack": "^6.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "gh-pages": "^6.3.0"
+  }
+}
