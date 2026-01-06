@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { usePaystackPayment } from 'react-paystack';
+import { usePaystackPayment } from 'react-paystack'; 
 import './PaystackPayment.css';
 
 const generateReference = () => {
