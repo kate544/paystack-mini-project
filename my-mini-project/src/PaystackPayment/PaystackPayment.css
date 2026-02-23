@@ -79,7 +79,6 @@
     outline: none;
 }
 
-/* Row Split */
 .row-split {
     display: flex;
     gap: 15px;

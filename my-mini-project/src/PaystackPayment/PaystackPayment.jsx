@@ -64,7 +64,7 @@ const PaystackPayment = ({ amount, email }) => {
 
     const logos = {
         mastercard: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg",
-        visa: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Visa_2021.svg"
+        visa: "https://upload.wikimedia.org/wikipedia/commons/8/81/Visa_Brandmark_2021.svg"
     };
 
     if (isSuccess) {
