@@ -61,12 +61,10 @@ const PaystackPayment = ({ amount, email }) => {
         }
         initializePayment(onSuccess, onClose);
     };
-
     const logos = {
         mastercard: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg",
         visa: "https://upload.wikimedia.org/wikipedia/commons/8/81/Visa_Brandmark_2021.svg"
     };
-
     if (isSuccess) {
         return (
             <div className="payment-container">
@@ -85,7 +83,6 @@ const PaystackPayment = ({ amount, email }) => {
                             <span className="ref-text">{receiptData?.reference}</span>
                         </div>
                     </div>
-
                     <button className="pay-btn" onClick={() => window.location.reload()}>
                         Book Another Room
                     </button>
@@ -94,7 +91,6 @@ const PaystackPayment = ({ amount, email }) => {
             </div>
         );
     }
-
     return (
         <div className="payment-container">
             <div className="visa-card">
@@ -111,13 +107,11 @@ const PaystackPayment = ({ amount, email }) => {
                     </div>
                 </div>
             </div>
-
             <div className="form-box">
                 <div className="order-summary">
                     <span>Total Amount:</span>
                     <strong>KES {localAmount.toLocaleString()}</strong>
                 </div>
-
                 <div className="field">
                     <label>Enter Amount to Pay (KES)</label>
                     <input 
@@ -126,12 +120,10 @@ const PaystackPayment = ({ amount, email }) => {
                         onChange={(e) => setLocalAmount(parseFloat(e.target.value) || 0)} 
                     />
                 </div>
-
                 <div className="field">
                     <label>Cardholder Name</label>
                     <input name="name" type="text" placeholder="Full Name" onChange={handleInputChange} />
                 </div>
-                
                 <div className="field">
                     <label>Card Number</label>
                     <div className="input-with-logo">
@@ -139,7 +131,6 @@ const PaystackPayment = ({ amount, email }) => {
                         <img src={logos[cardType]} alt="card type" className={`brand-logo ${cardType}`} />
                     </div>
                 </div>
-
                 <div className="row-split">
                     <div className="field">
                         <label>Expiry Date</label>
@@ -150,7 +141,6 @@ const PaystackPayment = ({ amount, email }) => {
                         <input name="cvv" type="password" placeholder="***" maxLength="3" onChange={handleInputChange} />
                     </div>
                 </div>
-
                 <button className="pay-btn" onClick={handlePayment}>
                     Confirm & Pay KES 
                 </button>
