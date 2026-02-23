@@ -2,8 +2,7 @@ import React from 'react';
 import PaystackPayment from './PaystackPayment/PaystackPayment';
 
 function App() {
-  const roomPrice = 0; 
-  
+  const roomPrice = 5000;  
   const userEmail = "kathryntokoli@gmail.com"; 
 
   return (
